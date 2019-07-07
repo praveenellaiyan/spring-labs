@@ -3,7 +3,6 @@
  */
 package com.praveenellaiyan.bean.resolveby.qualifiers;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -18,7 +17,7 @@ public class Application {
 	public static void main(String[] args) {
 
 		// Instantiate Spring Container
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
 
 		// Retrieve Bean of type Animal from Container
 		Animal animal = ctx.getBean("cat", Animal.class);
@@ -31,6 +30,7 @@ public class Application {
 		System.out.println(animal.getAnimalInfo());
 		System.out.println(animal.getAnimalFood());
 
+		ctx.close();
 	}
 
 }
