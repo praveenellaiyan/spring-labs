@@ -1,7 +1,7 @@
 /**
  * 
  */
-package main.java.com.praveenellaiyan.bean.lifecycle;
+package com.praveenellaiyan.bean.lifecycle;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -9,7 +9,6 @@ import javax.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  * @author Praveen Ellaiyan

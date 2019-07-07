@@ -1,7 +1,7 @@
 /**
  * 
  */
-package main.java.com.praveenellaiyan.bean.lifecycle;
+package com.praveenellaiyan.bean.lifecycle;
 
 /**
  * @author Praveen Ellaiyan
