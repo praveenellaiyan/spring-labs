@@ -1,24 +1,29 @@
 /**
  * 
  */
-package com.praveenellaiyan.bean.resolveby.type;
+package com.praveenellaiyan.bean.scope.singleton;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Praveen Ellaiyan
  *
  */
+/*
+ * Default scope of the bean `Singleton` applicable for Cat component 
+ */
 @Component
-public class Monkey implements Animal {
+public class Cat implements Animal {
 
 	@Autowired
+	@Qualifier("catFood")
 	private Food food;
 
 	@Override
 	public String getAnimalInfo() {
-		return "Name is - Monkey";
+		return "Pet Name is - Smokey";
 	}
 
 	@Override

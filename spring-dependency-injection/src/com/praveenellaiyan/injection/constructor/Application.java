@@ -3,7 +3,6 @@
  */
 package com.praveenellaiyan.injection.constructor;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -17,14 +16,16 @@ public class Application {
 	 */
 	public static void main(String[] args) {
 
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+		// Instantiate Spring Container
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
 
+		// Retrieve Bean of type Animal from Container
 		Animal animal = ctx.getBean("dog", Animal.class);
 
 		System.out.println(animal.getAnimalInfo());
 		System.out.println(animal.getAnimalFood());
 		
-
+		ctx.close();
 	}
 
 }

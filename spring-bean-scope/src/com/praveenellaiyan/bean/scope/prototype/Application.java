@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.praveenellaiyan.injection.field;
+package com.praveenellaiyan.bean.scope.prototype;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -20,10 +20,9 @@ public class Application {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
 
 		// Retrieve Bean of type Animal from Container
-		Animal animal = ctx.getBean("dog", Animal.class);
-
-		System.out.println(animal.getAnimalInfo());
-		System.out.println(animal.getAnimalFood());
+		Animal catObj1 = ctx.getBean("monkey", Animal.class);
+		Animal catObj2 = ctx.getBean("monkey", Animal.class);
+		System.out.println("Monkey component has bean scope of prototype? "+ !catObj1.equals(catObj2));
 
 		ctx.close();
 	}
