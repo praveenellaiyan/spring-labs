@@ -8,3 +8,7 @@ Three type of Injection Exist. <BR>
 3. ````Field Injection```` - Using @Autowired annotation offered by spring framework field injection can be accomplished.<BR>
 
 Read More On >> https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans-dependencies
+
+### Local Setup
+1. Add spring core libraries in to classpath.
+2. Run like any other simple java application.
