@@ -2,7 +2,7 @@
 Bean scope depicts the visibility of the bean from container through out the application life cycle.
 
 ````
-Below are the list of bean scope offered by spring framework.<br>
+Below are the list of bean scope offered by spring framework.
 ````
 
 1. ``singleton`` - (Default) Scopes a single bean definition to a single object instance per Spring IoC container.<br>
