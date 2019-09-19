@@ -13,7 +13,7 @@ Add `spring-boot-starter-security` dependency on to your project.<br>
 	<artifactId>spring-boot-starter-security</artifactId>
 </dependency>
 ````
-<br>The moment you add it, spring does the below list of magic and even more by default.<br>
+The moment you add it, spring does the below list of magic and even more by default.<br>
 a. Automatically secure all of the end points<br>
 b. Create default login form - `/login`<br>
 ![spring-default-login-page](https://user-images.githubusercontent.com/36845597/64909014-59638680-d724-11e9-818f-55cbfa43bf00.png)
@@ -23,15 +23,7 @@ b. Create default login form - `/login`<br>
 ![spring-security-default-logout-confirmation-popup](https://user-images.githubusercontent.com/36845597/64909060-d4c53800-d724-11e9-9ffa-3dfb42dd14d0.png)
 <br>
 ![spring-security-logout-page](https://user-images.githubusercontent.com/36845597/64909116-a5fb9180-d725-11e9-9472-f8beb5f34c52.png)
-<br>e. Generates default credentials<br>
-````
-username: user
-````
-````
-password:
-````
-![spring-credentials](https://user-images.githubusercontent.com/36845597/64909206-bb24f000-d726-11e9-8ac8-fc4f95e5b1a5.png)
-<br>f. Default credentials can be overridden in `application.properties` file.<br>
+<br>e. Default credentials can be overridden in `application.properties` file.<br>
 ````
 //override default user name
 spring.security.user.name=custom_user_name
